@@ -1,4 +1,4 @@
-package com.company.transfer.domain;
+package com.nat.transfer.domain;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,7 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-import com.company.transfer.exception.EntityCreationException;
+import com.nat.transfer.exception.EntityCreationException;
 
 @Entity
 public class Transfer {

@@ -1,5 +1,6 @@
-package com.company.transfer.controller;
+package com.nat.transfer.controller;
 
+import com.nat.transfer.service.TransferService;
 import java.math.BigDecimal;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.company.transfer.domain.Account;
-import com.company.transfer.domain.Transfer;
-import com.company.transfer.service.TransferService;
+import com.nat.transfer.domain.Account;
+import com.nat.transfer.domain.Transfer;
 
 @RestController
+@RequestMapping("/api")
 public class TransferController {
 	private final TransferService transferService;
 

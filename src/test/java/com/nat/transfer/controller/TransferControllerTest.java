@@ -1,9 +1,9 @@
-package com.company.transfer.controller;
+package com.nat.transfer.controller;
 
-import com.company.transfer.AppTransferService;
-import com.company.transfer.repositories.IAccountRepository;
-import com.company.transfer.repositories.ITransferRepository;
-import com.company.transfer.testutils.AmountConstants;
+import com.nat.transfer.AppTransferService;
+import com.nat.transfer.repositories.IAccountRepository;
+import com.nat.transfer.repositories.ITransferRepository;
+import com.nat.transfer.testutils.AmountConstants;
 import java.nio.charset.Charset;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;

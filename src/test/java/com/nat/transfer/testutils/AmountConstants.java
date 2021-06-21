@@ -1,4 +1,4 @@
-package com.company.transfer.testutils;
+package com.nat.transfer.testutils;
 
 import java.math.BigDecimal;
 

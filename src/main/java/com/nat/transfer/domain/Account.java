@@ -1,4 +1,4 @@
-package com.company.transfer.domain;
+package com.nat.transfer.domain;
 
 import java.math.BigDecimal;
 import java.util.Optional;
@@ -12,7 +12,7 @@ import javax.persistence.Version;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-import com.company.transfer.exception.EntityCreationException;
+import com.nat.transfer.exception.EntityCreationException;
 
 /**
  * This class represents the Account entity of this application Domain Model

@@ -1,19 +1,22 @@
-package com.company.transfer.service;
+package com.nat.transfer.service;
 
-import com.company.transfer.domain.Account;
-import com.company.transfer.domain.Transfer;
-import com.company.transfer.repositories.IAccountRepository;
-import com.company.transfer.repositories.ITransferRepository;
-import com.company.transfer.repositories.impl.AccountMockRepository;
-import com.company.transfer.repositories.impl.TransferMockRepository;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_10;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_100;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_1000;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_50;
+import com.nat.transfer.domain.Account;
+import com.nat.transfer.domain.Transfer;
+import com.nat.transfer.repositories.IAccountRepository;
+import com.nat.transfer.repositories.ITransferRepository;
+import com.nat.transfer.repositories.impl.AccountMockRepository;
+import com.nat.transfer.repositories.impl.TransferMockRepository;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_10;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_100;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_1000;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_50;
+
 import java.math.BigDecimal;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -178,9 +181,9 @@ public class ConcurrentTransferServiceTest {
 		assertEquals(expectedTransfersQuantity, this.transferRepository.count());
 		
 		// accounts must have the expected final balances
-		assertEquals(expectedBalanceAccountA, this.accountRepository.findByName("A").getBalance());
-		assertEquals(expectedBalanceAccountB, this.accountRepository.findByName("B").getBalance());
-		assertEquals(expectedBalanceAccountC, this.accountRepository.findByName("C").getBalance());
+		Assert.assertEquals(expectedBalanceAccountA, this.accountRepository.findByName("A").getBalance());
+		Assert.assertEquals(expectedBalanceAccountB, this.accountRepository.findByName("B").getBalance());
+		Assert.assertEquals(expectedBalanceAccountC, this.accountRepository.findByName("C").getBalance());
 	}
 	
 	private void helperFnCreateAccount(Account a) {

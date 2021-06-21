@@ -1,8 +1,8 @@
-package com.company.transfer.repositories;
+package com.nat.transfer.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.company.transfer.domain.Transfer;
+import com.nat.transfer.domain.Transfer;
 
 public interface ITransferRepository extends CrudRepository<Transfer, Long> {
 }

@@ -1,10 +1,10 @@
 /**
  *
  */
-package com.company.transfer.repositories.impl;
+package com.nat.transfer.repositories.impl;
 
-import com.company.transfer.domain.Account;
-import com.company.transfer.repositories.IAccountRepository;
+import com.nat.transfer.domain.Account;
+import com.nat.transfer.repositories.IAccountRepository;
 import java.util.NoSuchElementException;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -12,7 +12,8 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author jyotirmani
  *
  */
-public class AccountMockRepository extends AbstractMockRepository<Account, Long> implements IAccountRepository {
+public class AccountMockRepository extends AbstractMockRepository<Account, Long> implements
+    IAccountRepository {
 
     final private AtomicLong atomicId;
 

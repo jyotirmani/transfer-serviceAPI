@@ -2,10 +2,10 @@
 ## Notes for Project Files
 ### com.company.transfer.App.java
 * Annotated class `@SpringBootApplication`
-* Run SpringApplication `SpringApplication.run(App.class, args);`
+* Run SpringApplication `SpringApplication.run(AppTransferServie.class, args);`
 
 
-### com.company.transfer.controller.TransferController
+### TransferController
 * Annotated class
 `
 @RestController
@@ -22,7 +22,7 @@
 `
 
 
-### com.company.transfer.service.TransferService
+### TransferService
 * Annotated class
 `
 @Service
@@ -38,7 +38,7 @@
 	public synchronized Account createNewAccount(String name, BigDecimal initialBalance) throws TransferServiceException {
 `
 
-### package com.company.transfer.repositories.IAccountRepository
+### package IAccountRepository
 
 * Extends Spring Interface CrudeRepository
 `

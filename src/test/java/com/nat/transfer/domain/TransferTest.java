@@ -1,6 +1,6 @@
-package com.company.transfer.domain;
+package com.nat.transfer.domain;
 
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_1000;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_1000;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertTrue;

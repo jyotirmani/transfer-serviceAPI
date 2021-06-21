@@ -1,4 +1,4 @@
-package com.company.transfer.domain;
+package com.nat.transfer.domain;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 
 import org.junit.Test;
 
-import static com.company.transfer.testutils.AmountConstants.*;
+import static com.nat.transfer.testutils.AmountConstants.*;
 
 /**
  * Unit Test class for Account Entity<br>

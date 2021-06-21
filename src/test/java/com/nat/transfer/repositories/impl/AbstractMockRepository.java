@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.company.transfer.repositories.impl;
+package com.nat.transfer.repositories.impl;
 
 import java.io.Serializable;
 import java.util.ArrayList;

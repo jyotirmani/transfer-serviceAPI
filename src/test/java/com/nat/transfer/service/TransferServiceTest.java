@@ -1,19 +1,22 @@
-package com.company.transfer.service;
+package com.nat.transfer.service;
 
-import com.company.transfer.domain.Account;
-import com.company.transfer.domain.Transfer;
-import com.company.transfer.repositories.IAccountRepository;
-import com.company.transfer.repositories.ITransferRepository;
-import com.company.transfer.repositories.impl.AccountMockRepository;
-import com.company.transfer.repositories.impl.TransferMockRepository;
-import com.company.transfer.exception.TransferServiceException;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_10;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_100;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_1000;
-import static com.company.transfer.testutils.AmountConstants.AMOUNT_NEGATIVE_ONE;
+import com.nat.transfer.domain.Account;
+import com.nat.transfer.domain.Transfer;
+import com.nat.transfer.repositories.IAccountRepository;
+import com.nat.transfer.repositories.ITransferRepository;
+import com.nat.transfer.repositories.impl.AccountMockRepository;
+import com.nat.transfer.repositories.impl.TransferMockRepository;
+import com.nat.transfer.exception.TransferServiceException;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_10;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_100;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_1000;
+import static com.nat.transfer.testutils.AmountConstants.AMOUNT_NEGATIVE_ONE;
+
 import java.math.BigDecimal;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
+
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -45,7 +48,7 @@ public class TransferServiceTest {
     public void testCreateNewAccount() throws Exception {
         Account createdAccount = this.transferService.createNewAccount("Test", AMOUNT_100);
 
-        assertEquals(createdAccount, this.accountRepository.findOne(createdAccount.getId()));
+        Assert.assertEquals(createdAccount, this.accountRepository.findOne(createdAccount.getId()));
     }
 
     @Test
@@ -67,8 +70,8 @@ public class TransferServiceTest {
 
         Transfer transfer = this.transferService.transfer(1L, 2L, AMOUNT_10);
 
-        assertEquals(balanceOne, this.accountRepository.findOne(1L).getBalance());
-        assertEquals(balanceTwo, this.accountRepository.findOne(2L).getBalance());
+        Assert.assertEquals(balanceOne, this.accountRepository.findOne(1L).getBalance());
+        Assert.assertEquals(balanceTwo, this.accountRepository.findOne(2L).getBalance());
 
         assertEquals(1L, transfer.getSourceAccountId());
         assertEquals(2L, transfer.getDestinationAccountId());

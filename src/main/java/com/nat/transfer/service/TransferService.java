@@ -1,4 +1,4 @@
-package com.company.transfer.service;
+package com.nat.transfer.service;
 
 import java.math.BigDecimal;
 import java.util.Optional;
@@ -8,12 +8,12 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.company.transfer.domain.Account;
-import com.company.transfer.domain.Transfer;
-import com.company.transfer.exception.EntityCreationException;
-import com.company.transfer.repositories.IAccountRepository;
-import com.company.transfer.repositories.ITransferRepository;
-import com.company.transfer.exception.TransferServiceException;
+import com.nat.transfer.domain.Account;
+import com.nat.transfer.domain.Transfer;
+import com.nat.transfer.exception.EntityCreationException;
+import com.nat.transfer.repositories.IAccountRepository;
+import com.nat.transfer.repositories.ITransferRepository;
+import com.nat.transfer.exception.TransferServiceException;
 
 @Service
 public class TransferService {

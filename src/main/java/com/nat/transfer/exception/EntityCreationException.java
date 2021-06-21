@@ -1,4 +1,4 @@
-package com.company.transfer.exception;
+package com.nat.transfer.exception;
 
 public class EntityCreationException extends RuntimeException {
 
