@@ -8,7 +8,7 @@ import com.company.transfer.repositories.ITransferRepository;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * @author Emiliano
+ * @author jyotirmani
  *
  */
 public class TransferMockRepository extends AbstractMockRepository<Transfer, Long> implements ITransferRepository {

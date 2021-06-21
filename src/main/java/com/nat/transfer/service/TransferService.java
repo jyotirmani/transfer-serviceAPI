@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.company.transfer.domain.Account;
 import com.company.transfer.domain.Transfer;
-import com.company.transfer.domain.exception.EntityCreationException;
+import com.company.transfer.exception.EntityCreationException;
 import com.company.transfer.repositories.IAccountRepository;
 import com.company.transfer.repositories.ITransferRepository;
-import com.company.transfer.service.exception.TransferServiceException;
+import com.company.transfer.exception.TransferServiceException;
 
 @Service
 public class TransferService {

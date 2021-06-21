@@ -21,7 +21,7 @@ import org.junit.Test;
 /**
  * Integration Tests (IT) for TransferService
  * 
- * @author emiliano
+ * @author jyotirmani
  */
 public class ConcurrentTransferServiceTest {
     private TransferService transferService;	
@@ -194,7 +194,7 @@ public class ConcurrentTransferServiceTest {
 
 
 /**
- * @author Emiliano
+ * @author jyotirmani
  *
  * Helper class to create domain model entities using a threaded (concurrent) batch
  *

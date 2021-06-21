@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * @author Emiliano
+ * @author jyotirmani
  *
  */
 public abstract class AbstractMockRepository<T extends Object, S extends Serializable> implements CrudRepository<T, S> {

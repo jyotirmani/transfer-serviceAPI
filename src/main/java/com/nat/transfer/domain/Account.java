@@ -12,12 +12,12 @@ import javax.persistence.Version;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-import com.company.transfer.domain.exception.EntityCreationException;
+import com.company.transfer.exception.EntityCreationException;
 
 /**
  * This class represents the Account entity of this application Domain Model
  * 
- * @author emiliano
+ * @author jyotirmani
  */
 @Entity
 public class Account {

@@ -1,4 +1,4 @@
-package com.company.transfer.service.exception;
+package com.company.transfer.exception;
 
 public class TransferServiceException extends RuntimeException {
 

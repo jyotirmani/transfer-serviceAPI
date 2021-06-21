@@ -1,6 +1,6 @@
 package com.company.transfer.controller;
 
-import com.company.transfer.App;
+import com.company.transfer.AppTransferService;
 import com.company.transfer.repositories.IAccountRepository;
 import com.company.transfer.repositories.ITransferRepository;
 import com.company.transfer.testutils.AmountConstants;
@@ -36,12 +36,12 @@ import org.springframework.web.util.NestedServletException;
  * Also an alternate property file must be used as in annotation below.<br>
  * The DirtiesContext annotation ensures that the Application Context is reset after each test method to ensure database cleanup.
  * 
- * @author emiliano
+ * @author jyotirmani
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(
         webEnvironment = WebEnvironment.RANDOM_PORT,
-        classes = App.class)
+        classes = AppTransferService.class)
 @AutoConfigureMockMvc
 @TestPropertySource(
         locations = "classpath:application-integration-tests.properties")

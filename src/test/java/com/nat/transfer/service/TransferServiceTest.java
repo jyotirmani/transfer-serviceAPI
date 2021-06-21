@@ -6,7 +6,7 @@ import com.company.transfer.repositories.IAccountRepository;
 import com.company.transfer.repositories.ITransferRepository;
 import com.company.transfer.repositories.impl.AccountMockRepository;
 import com.company.transfer.repositories.impl.TransferMockRepository;
-import com.company.transfer.service.exception.TransferServiceException;
+import com.company.transfer.exception.TransferServiceException;
 import static com.company.transfer.testutils.AmountConstants.AMOUNT_10;
 import static com.company.transfer.testutils.AmountConstants.AMOUNT_100;
 import static com.company.transfer.testutils.AmountConstants.AMOUNT_1000;
@@ -20,7 +20,7 @@ import org.junit.Test;
 /**
  * Integration Tests (IT) for TransferService
  *
- * @author emiliano
+ * @author jyotirmani
  */
 public class TransferServiceTest {
 

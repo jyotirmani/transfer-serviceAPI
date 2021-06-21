@@ -12,7 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-import com.company.transfer.domain.exception.EntityCreationException;
+import com.company.transfer.exception.EntityCreationException;
 
 @Entity
 public class Transfer {

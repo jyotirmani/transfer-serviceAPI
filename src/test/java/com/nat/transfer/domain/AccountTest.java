@@ -16,7 +16,7 @@ import static com.company.transfer.testutils.AmountConstants.*;
  * Unit Test class for Account Entity<br>
  * Since this Account is an entity backed by JPA, this class will test only hash code and equals  
  *  
- * @author emiliano
+ * @author jyotirmani
  */
 public class AccountTest {
 	/**
