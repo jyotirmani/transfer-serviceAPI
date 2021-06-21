@@ -139,7 +139,7 @@ RESTful API service for money transfers between accounts, that allows:
    * mvn clean package
 ### Run the application
    * mvn spring-boot:run  
-   * or,
+   or,
    * java -jar target/transfer-service-1.0.jar
 ### Database Location
    * The H2 database files are created at ~/tmp/transfer-service.mv.db and ~/tmp/transfer-service.trace.db
@@ -151,7 +151,7 @@ RESTful API service for money transfers between accounts, that allows:
    * Data consistency is guaranteed by append-only approach for storing the data and usage of idempotency keys.
 
 
-## Building and running inside docker
+### Building and running inside docker
    ** First run may take some time. Provided image is not optimized for any kind of workload and can only be used for testing.
   
    * First build an image:
@@ -162,7 +162,7 @@ RESTful API service for money transfers between accounts, that allows:
     docker run --rm -it -p 7000:7000 transfer-service:latest
    
 
-## API documentation using Swagger
+### API documentation using Swagger
    ** First Run the springboot application.
   
    * Swagger API docs URL for postman client:
@@ -174,7 +174,7 @@ RESTful API service for money transfers between accounts, that allows:
     http://localhost:8080/swagger-ui.html
     
     
-## Usage Guidelines
+### Usage Guidelines
    * You can use Postman client to execute the URLs
    or,
    * You can use your web browser or curl. Below examples use curl.
@@ -190,7 +190,7 @@ RESTful API service for money transfers between accounts, that allows:
 ### Create a transfer
    * curl -i -H 'Content-Type: application/json' -X PUT "http://localhost:8080/accounts/transfer?sourceId=1&destId=2&amount=50"
 
-## Known Limitations in existing version
+### Known Limitations in existing version
    * Application has no Query By methods such as Accounts.findByName, Accounts.findByBalanceFilter, Transfers.findBySourceAccount, Transfers.findByDestinationAccount;
    * Application has no Delete methods;
    * Queries are unsorted;
